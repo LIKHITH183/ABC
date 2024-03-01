@@ -1,0 +1,64 @@
+Lab 1
+git init
+touch example.txt
+git add example.txt
+git commit -m "CM"
+
+or
+git config --global user.email "email ID"
+git config --global user.name "name"
+git add example.txt
+git commit -m "CM"
+
+
+Lab 2
+git checkout -b feature-branch
+Enter files here
+git checkout master
+git merge feature-branch
+
+
+Lab 4
+git clone "URL from GitHub"
+
+
+PUSH
+git push origin master (or) git push origin main
+
+If this doesnot work, then
+git remote add origin "URL from GitHub"
+git pull --rebase origin main (or master)
+git push origin main (or master)
+
+
+Lab 6
+git checkout -b <branch-name>
+git checkout master
+git merge <branch-name> -m "Any Message"
+
+
+Lab 7
+git tag v1.0
+git tag v1.0 <SHA-commit-ID-from-GitHub>
+
+
+Lab 8
+git cherry-pick <start-commit-ID>^..<end-commit-ID>
+
+
+Lab 9
+git show <commit-ID-from-GitHub>
+
+
+Lab 10
+git log --author="author name" --since="2024-01-01"  --until="2024-03-01"
+
+
+Lab 11
+git log -n 5
+
+
+Lab 12
+git revert <commit-ID-from-GitHub>
+'esc' + ':wq' for coming out of file
+
